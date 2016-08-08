@@ -28,7 +28,7 @@ namespace DbManager
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cmdSearch_Click(object sender, EventArgs e)
         {
 
         }
@@ -44,6 +44,16 @@ namespace DbManager
 
             dgvTable.DataSource = dt;
 
+        }
+
+        private void cmdDbUpdate_Click(object sender, EventArgs e)
+        {
+            StringBuilder sql = new StringBuilder();
+
+            foreach (DataGridViewRowCollection rows in this.dgvTable.Rows)
+            {
+                
+            } 
         }
     }
 }

@@ -34,11 +34,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmdSearch = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmdDbUpdate = new System.Windows.Forms.Button();
             this.dgvTable = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTable)).BeginInit();
             this.SuspendLayout();
@@ -93,15 +93,15 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "表示項目セットID";
             // 
-            // button1
+            // cmdSearch
             // 
-            this.button1.Location = new System.Drawing.Point(423, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "絞り込み";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cmdSearch.Location = new System.Drawing.Point(423, 49);
+            this.cmdSearch.Name = "cmdSearch";
+            this.cmdSearch.Size = new System.Drawing.Size(75, 23);
+            this.cmdSearch.TabIndex = 6;
+            this.cmdSearch.Text = "検索";
+            this.cmdSearch.UseVisualStyleBackColor = true;
+            this.cmdSearch.Click += new System.EventHandler(this.cmdSearch_Click);
             // 
             // button2
             // 
@@ -114,12 +114,22 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.cmdDbUpdate);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(912, 100);
             this.panel1.TabIndex = 9;
+            // 
+            // cmdDbUpdate
+            // 
+            this.cmdDbUpdate.Location = new System.Drawing.Point(528, 46);
+            this.cmdDbUpdate.Name = "cmdDbUpdate";
+            this.cmdDbUpdate.Size = new System.Drawing.Size(75, 23);
+            this.cmdDbUpdate.TabIndex = 0;
+            this.cmdDbUpdate.Text = "DB更新";
+            this.cmdDbUpdate.UseVisualStyleBackColor = true;
+            this.cmdDbUpdate.Click += new System.EventHandler(this.cmdDbUpdate_Click);
             // 
             // dgvTable
             // 
@@ -131,22 +141,13 @@
             this.dgvTable.Size = new System.Drawing.Size(913, 276);
             this.dgvTable.TabIndex = 8;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(528, 46);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // frmDbManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(915, 384);
             this.Controls.Add(this.dgvTable);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmdSearch);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
@@ -171,11 +172,11 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cmdSearch;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvTable;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button cmdDbUpdate;
     }
 }
 
